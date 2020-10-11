@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+  h1 {
+    /*Set font family for header font*/
+    font-family: 'Roboto Slab', serif;
+  }
+
+  h3, body, input, button {
+    /*Set font family for everything except the header font*/
+    font-family: 'Roboto', sans-serif;
+  }
+
+  header {
+    /*Sets header dimensions*/
+    width: 100%;
+    height: 100px;
+    position: absolute;
+
+    /*Sets distance from side of screen*/
+    top: 0;
+    left: 0;
+
+    /*Sets distance for header text*/
+    padding: 17px;
+
+    /*Sets background color*/
+    background: #000;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    /*Sets text details for header text*/
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  body {
+    /*Sets background color of webpage*/
+    background: #C0C0C0;
+
+    padding-top: 100px;
+  }
+
+  h3 {
+    /*Sets text details for box labels*/
+    color: #000;
+    font-weight: 500;
+  }
+
+  /*Roll dice button*/
+  body button {
+    /*Sets dimensions for button*/
+    width: 150px;
+    height: 30px;
+
+    /*Creates margin from sides of container*/
+    margin-left: 205px;
+    margin-top: 20px;
+
+    /*Sets text and border colors*/
+    border-color: #008000;
+    color: #008000;
+
+    /*Sets font details*/
+    font-size: 15px;
+    font-weight: 500;
+
+    /*Sets border radius*/
+    border-radius: 5px;
+
+    /*Changes cursor when hovered*/
+    cursor: pointer;
+
+    outline: none;
+
+    z-index: 2;
+  }
+
+  body input {
+    /*Sets text details in body*/
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 5px;
+    padding-right: 5px;
+  }
+
+  .container {
+    /*Sets display settings*/
+    display: flex;
+    flex-direction: column;
+
+    /*Sets container width*/
+    width: 600px;
+
+    /*Sets margins*/
+    margin: 0 auto;
+    margin-top: 20px;
+
+    /*Centers content*/
+    justify-content: center;
+    align-self: center;
+
+    /*Sets container color*/
+    background: #fff;
+
+    /*Sets border radius*/
+    border-radius: 10px;
+  }
+
+  .container #container-body {
+    /*Sets padding*/
+    padding: 20px;
+    padding-top: 5px;
+  }
+
+  .titles {
+    /*Sets display settings*/
+    display: flex;
+    flex-direction: row;
+
+    /*Sets width*/
+    width: 500px;
+
+    /*Sets margins*/
+    margin: 0 auto;
+
+    /*Sets content justification*/
+    justify-content: space-between;
+
+    /*Sets padding*/
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .input {
+    /*Sets display settings*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    /*Sets width*/
+    width: 500px;
+
+    /*Sets content justification*/
+    justify-content: flex-start;
+
+    /*Sets margins*/
+    margin: 0 auto;
+
+    /*Sets padding*/
+    padding-bottom: 20px;
+  }
+
+  .form-group .num-dice {
+    /*Sets text box size and spacing*/
+    width: 130px;
+    height: 30px;
+    margin-right: 70px;
+  }
+
+  .dropdown .type {
+    /*Sets text box size and spacing*/
+    width: 40px;
+    height: 30px;
+    margin-right: 75px;
+  }
+
+  .form-group .modifier {
+    /*Sets text box size and spacing*/
+    width: 70px;
+    height: 30px;
+    margin-right: 60px;
+  }
+
+  .input:last-of-type {
+    /*Removes padding for last input row*/
+    padding-bottom: 0;
+  }
+
+  /*Adds padding to align dice type*/
+  .fixed {
+    padding-top: 5px;
+  }
+
+  .container-2 {
+    /*Sets display settings*/
+    display: flex;
+    flex-direction: column;
+
+    /*Sets width*/
+    width: 600px;
+
+    /*Sets content justifications*/
+    justify-content: center;
+    align-self: center;
+
+    /*Sets margins*/
+    margin: 0 auto;
+    margin-top: 20px;
+
+    /*Sets background color*/
+    background: #fff;
+
+    /*Sets border radius*/
+    border-radius: 10px;
+  }
+
+  .container-2-title {
+    /*Centers text*/
+    text-align: center;
+
+    /*Sets width*/
+    width: 500px;
+
+    /*Sets margins*/
+    margin: 0 auto;
+
+    /*Sets padding*/
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .container-2-content {
+    /*Sets width*/
+    width: 500px;
+
+    /*Sets margins*/
+    margin: 0 auto;
+
+    /*Breaks word on wrapping*/
+    word-wrap: break-word;
+
+    /*Sets padding*/
+    padding-bottom: 10px;
+
+    /*Sets font weight*/
+    font-weight: 400;
+  }
+
+  .container-2-content #results-d2:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  .container-2-content #results-d4:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  .container-2-content #results-d6:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  .container-2-content #results-d8:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  .container-2-content #results-d10:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  .container-2-content #results-d12:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  .container-2-content #results-d20:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  .container-2-content #results-d100:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  .container-2-content #total:not(:empty) {
+    /*Adds padding to results*/
+    padding-bottom: 10px;
+  }
+
+  footer {
+    /*Adds padding bottom of page*/
+    padding-bottom: 30px;
+  }

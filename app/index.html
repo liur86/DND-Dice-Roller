@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice Roller</title>
+
+    <!-- Embedded Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Dungeons & Dragons Dice Roller</h1>
+    </header>
+
+    <div class="container">
+      <div id="container-body">
+        <div class="titles">
+          <h3>Number of Dice</h3>
+          <h3>Modifier Type</h3>
+          <h3>Modifier</h3>
+          <h3>Dice Type</h3>
+        </div>
+
+        <form class>
+          <div class="dice-rows">
+
+            <!-- d2 row -->
+            <div class="input">
+              <div class="form-group">
+                <input type="text" class="num-dice" id="num-dice-d2" placeholder="Number of Dice">
+              </div>
+              <div class="dropdown">
+                <select class="type" id="mod-type-d2">
+                  <option value="none"></option>
+                  <option value="plus">+</option>
+                  <option value="minus">-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="modifier" id="modifier-d2" placeholder="Modifier">
+              </div>
+              <div class="fixed">
+                d2
+              </div>
+            </div>
+
+            <!-- d4 row -->
+            <div class="input">
+              <div class="form-group">
+                <input type="text" class="num-dice" id="num-dice-d4" placeholder="Number of Dice">
+              </div>
+              <div class="dropdown">
+                <select class="type" id="mod-type-d4">
+                  <option value="none"></option>
+                  <option value="plus">+</option>
+                  <option value="minus">-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="modifier" id="modifier-d4" placeholder="Modifier">
+              </div>
+              <div class="fixed">
+                d4
+              </div>
+            </div>
+
+            <!-- d6 row -->
+            <div class="input">
+              <div class="form-group">
+                <input type="text" class="num-dice" id="num-dice-d6" placeholder="Number of Dice">
+              </div>
+              <div class="dropdown">
+                <select class="type" id="mod-type-d6">
+                  <option value="none"></option>
+                  <option value="plus">+</option>
+                  <option value="minus">-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="modifier" id="modifier-d6" placeholder="Modifier">
+              </div>
+              <div class="fixed">
+                d6
+              </div>
+            </div>
+
+            <!-- d8 row -->
+            <div class="input">
+              <div class="form-group">
+                <input type="text" class="num-dice" id="num-dice-d8" placeholder="Number of Dice">
+              </div>
+              <div class="dropdown">
+                <select class="type" id="mod-type-d8">
+                  <option value="none"></option>
+                  <option value="plus">+</option>
+                  <option value="minus">-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="modifier" id="modifier-d8" placeholder="Modifier">
+              </div>
+              <div class="fixed">
+                d8
+              </div>
+            </div>
+
+            <!-- d10 row -->
+            <div class="input">
+              <div class="form-group">
+                <input type="text" class="num-dice" id="num-dice-d10" placeholder="Number of Dice">
+              </div>
+              <div class="dropdown">
+                <select class="type" id="mod-type-d10">
+                  <option value="none"></option>
+                  <option value="plus">+</option>
+                  <option value="minus">-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="modifier" id="modifier-d10" placeholder="Modifier">
+              </div>
+              <div class="fixed">
+                d10
+              </div>
+            </div>
+
+            <!-- d12 row -->
+            <div class="input">
+              <div class="form-group">
+                <input type="text" class="num-dice" id="num-dice-d12" placeholder="Number of Dice">
+              </div>
+              <div class="dropdown">
+                <select class="type" id="mod-type-d12">
+                  <option value="none"></option>
+                  <option value="plus">+</option>
+                  <option value="minus">-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="modifier" id="modifier-d12" placeholder="Modifier">
+              </div>
+              <div class="fixed">
+                d12
+              </div>
+            </div>
+
+            <!-- d20 row -->
+            <div class="input">
+              <div class="form-group">
+                <input type="text" class="num-dice" id="num-dice-d20" placeholder="Number of Dice">
+              </div>
+              <div class="dropdown">
+                <select class="type" id="mod-type-d20">
+                  <option value="none"></option>
+                  <option value="plus">+</option>
+                  <option value="minus">-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="modifier" id="modifier-d20" placeholder="Modifier">
+              </div>
+              <div class="fixed">
+                d20
+              </div>
+            </div>
+
+            <!-- d100 row -->
+            <div class="input">
+              <div class="form-group">
+                <input type="text" class="num-dice" id="num-dice-d100" placeholder="Number of Dice">
+              </div>
+              <div class="dropdown">
+                <select class="type" id="mod-type-d100">
+                  <option value="none"></option>
+                  <option value="plus">+</option>
+                  <option value="minus">-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input type="text" class="modifier" id="modifier-d100" placeholder="Modifier">
+              </div>
+              <div class="fixed">
+                d100
+              </div>
+            </div>
+
+          </div>
+        </form>
+
+        <!-- Submit button -->
+        <div class="submit">
+          <button id="random">Roll Dice</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Results container -->
+    <div class="container-2">
+      <div id="container-body">
+        <div class="container-2-title">
+          <h3>Results</h3>
+        </div>
+        <div class="container-2-content">
+          <div id="results-d2"></div>
+          <div id="results-d4"></div>
+          <div id="results-d6"></div>
+          <div id="results-d8"></div>
+          <div id="results-d10"></div>
+          <div id="results-d12"></div>
+          <div id="results-d20"></div>
+          <div id="results-d100"></div>
+          <div id="total"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS File -->
+    <script src="js/main.js"></script>
+  </body>
+
+  <footer>
+  </footer>
+
+</html>
